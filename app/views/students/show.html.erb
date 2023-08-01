@@ -1,0 +1,9 @@
+<h1>Name: <%= @student.name %></h1>
+
+<div><% @enrollments.each do |enrollment| %>
+    <p><%= enrollment.course.name %></p>
+  <% end %>
+</div>
+
+<h3>Number of Enrollments: <%= @student.number_of_enrollments %></h3>
+<h3>Average Grade: <%= @student.average_grade %></h3>
