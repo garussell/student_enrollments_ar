@@ -1,0 +1,6 @@
+<% @teachers.each do |teacher| %>
+  <%= teacher.name %>
+  <% teacher.students.each do |student| %>
+    <%= link_to student.name, student_path(student) %>
+  <% end %>
+<% end %>
